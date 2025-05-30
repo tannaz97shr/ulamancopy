@@ -1,10 +1,10 @@
 "use client";
 
-import { XMarkIcon } from "@heroicons/react/24/outline";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import MenuPanel from "./MenuPanel";
 
 export default function MobileHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -99,54 +99,12 @@ export default function MobileHeader() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 z-40 bg-ulaman-beige flex flex-col items-center px-4 pt-24 text-ulaman-gold"
+            className="pt-[78px] w-full fixed top-0 left-0 z-40"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <button
-              onClick={() => setMenuOpen(false)}
-              className="absolute top-6 left-4"
-              aria-label="Close Menu"
-            >
-              <XMarkIcon className="h-6 w-6 text-ulaman-gold" />
-            </button>
-
-            <Image
-              src="/ulaman-logo.svg"
-              alt="Ulaman Logo"
-              width={50}
-              height={50}
-              className="mb-4"
-            />
-            <h2 className="text-xs font-medium tracking-widest">ULAMAN</h2>
-
-            <nav className="mt-8 text-center space-y-3 text-xl font-light">
-              {[
-                "Home",
-                "Villas",
-                "Packages",
-                "Spa",
-                "Retreats",
-                "Dine",
-                "Experiences",
-                "Facilities",
-                "Blog",
-                "Reviews",
-                "About",
-                "Contact",
-                "The Map",
-              ].map((label) => (
-                <Link
-                  key={label}
-                  href={`/${label.toLowerCase().replace(/\s+/g, "-")}`}
-                  onClick={() => setMenuOpen(false)}
-                  className="block"
-                >
-                  {label}
-                </Link>
-              ))}
-            </nav>
+            <MenuPanel onClose={() => setMenuOpen(false)} />
           </motion.div>
         )}
       </AnimatePresence>
