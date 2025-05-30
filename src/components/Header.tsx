@@ -26,43 +26,56 @@ export default function MobileHeader() {
           backgroundColor: isScrolled ? "#f0ebe2" : "rgba(0, 0, 0, 0)",
         }}
         transition={{ duration: 0.3 }}
-        className="fixed top-0 left-0 w-full z-50 px-4 py-3 flex justify-between items-center"
+        className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center"
       >
-        {/* Hamburger */}
-        <button
-          onClick={() => setMenuOpen((prev) => !prev)}
-          aria-label={menuOpen ? "Close Menu" : "Open Menu"}
-          className="relative group w-16 h-5 flex items-center justify-center focus:outline-none"
-        >
-          {/* Hidden accessible text */}
-          <span className="sr-only">
-            {menuOpen ? "Close Menu" : "Open Menu"}
-          </span>
+        {/* Left: Hamburger + Nav */}
+        <div className="flex items-center gap-8">
+          {/* Always Visible Menu Icon */}
+          <button
+            onClick={() => setMenuOpen((prev) => !prev)}
+            aria-label={menuOpen ? "Close Menu" : "Open Menu"}
+            className="relative group w-16 h-5 flex items-center justify-center focus:outline-none"
+          >
+            <span className="sr-only">
+              {menuOpen ? "Close Menu" : "Open Menu"}
+            </span>
+            <motion.span
+              animate={{
+                rotate: menuOpen ? 45 : 0,
+                y: menuOpen ? 0 : -6,
+                backgroundColor: isScrolled || menuOpen ? "#ad7c33" : "#ffffff",
+              }}
+              transition={{ duration: 0.3 }}
+              className="absolute w-11/12 h-[1px] origin-center"
+            />
+            <motion.span
+              animate={{
+                rotate: menuOpen ? -45 : 0,
+                y: menuOpen ? 0 : 6,
+                backgroundColor: isScrolled || menuOpen ? "#ad7c33" : "#ffffff",
+              }}
+              transition={{ duration: 0.3 }}
+              className="absolute w-11/12 h-[1px] origin-center"
+            />
+          </button>
 
-          {/* Top Line */}
-          <motion.span
-            animate={{
-              rotate: menuOpen ? 45 : 0,
-              y: menuOpen ? 0 : -6,
-              backgroundColor: isScrolled || menuOpen ? "#ad7c33" : "#ffffff",
-            }}
-            transition={{ duration: 0.3 }}
-            className="absolute w-11/12 h-[1px] origin-center"
-          />
+          {/* Nav Links (Desktop only) */}
+          <nav className="hidden md:flex gap-6 text-sm">
+            {["Villas", "Spa", "Dine", "Retreats"].map((item) => (
+              <Link
+                key={item}
+                href={`/${item.toLowerCase()}`}
+                className={`transition-all duration-300 ${
+                  isScrolled ? "text-gold" : "text-white"
+                }`}
+              >
+                {item}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
-          {/* Bottom Line */}
-          <motion.span
-            animate={{
-              rotate: menuOpen ? -45 : 0,
-              y: menuOpen ? 0 : 6,
-              backgroundColor: isScrolled || menuOpen ? "#ad7c33" : "#ffffff",
-            }}
-            transition={{ duration: 0.3 }}
-            className="absolute w-11/12 h-[1px] origin-center"
-          />
-        </button>
-
-        {/* Animated Logo */}
+        {/* Center: Logo */}
         <motion.div
           animate={{ scale: isScrolled ? 0.75 : 1 }}
           transition={{ duration: 0.3 }}
@@ -77,20 +90,18 @@ export default function MobileHeader() {
           />
         </motion.div>
 
-        {/* Book Button */}
+        {/* Right: Book Button */}
         <motion.div
-          animate={{
-            scale: isScrolled ? 0.9 : 1,
-          }}
+          animate={{ scale: isScrolled ? 0.9 : 1 }}
           transition={{ duration: 0.3 }}
         >
           <Link
             href="/book"
-            className={`px-5 py-2 border text-sm font-medium transition-all duration-300 
-      ${isScrolled ? "text-gold border-gold" : "text-white border-white"}
-      rounded-tl-xl rounded-br-xl`}
+            className={`px-5 py-2 border text-sm font-medium transition-all duration-300 rounded-tl-xl rounded-br-xl ${
+              isScrolled ? "text-gold border-gold" : "text-white border-white"
+            }`}
           >
-            Book
+            Stay With Us
           </Link>
         </motion.div>
       </motion.header>
