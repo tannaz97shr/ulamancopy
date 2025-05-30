@@ -1,23 +1,19 @@
-import VillaSlider from "./VillaSlider";
-
-interface Villa {
-  id: string;
-  title: string;
-  description: string;
-  images: string[];
-}
+import { Villa } from "@/types/villa";
+import ImageSlider from "./ImageSlider";
 
 export default function VillaCard({ villa }: { villa: Villa }) {
   return (
-    <div className="w-full max-w-md flex flex-col gap-4">
-      <VillaSlider images={villa.images} />
-
-      <h3 className="text-xl font-serif text-gold">{villa.title}</h3>
-      <p className="text-sm italic text-gray-700">{villa.description}</p>
-
+    <div className="bg-beige text-gold p-4">
+      <div className="rounded-xl overflow-hidden">
+        <ImageSlider images={villa.images} />
+      </div>
+      <h3 className="text-xl font-serif mt-4">{villa.title}</h3>
+      <p className="text-[15px] text-neutral-700 italic mt-2">
+        {villa.description}
+      </p>
       <a
         href="#"
-        className="text-gold underline underline-offset-4 text-sm mt-2"
+        className="text-xs font-medium text-gold mt-3 inline-block underline underline-offset-4"
       >
         DISCOVER
       </a>
