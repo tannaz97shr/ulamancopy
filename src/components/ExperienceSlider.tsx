@@ -42,7 +42,7 @@ export default function ExperienceSlider() {
   }, [swiperInstance]);
 
   return (
-    <div className="relative max-w-5xl mx-auto overflow-hidden rounded-tl-3xl rounded-br-3xl lg:w-1/2">
+    <div className="relative max-w-5xl mx-auto overflow-hidden rounded-tl-3xl rounded-br-3xl lg:w-1/2 group">
       <Swiper
         modules={[Navigation, Pagination, EffectFade]}
         loop
@@ -65,20 +65,19 @@ export default function ExperienceSlider() {
           </SwiperSlide>
         ))}
 
-        {/* Built-in Swiper pagination rendered automatically */}
         <div className="swiper-pagination absolute bottom-4 left-1/2 -translate-x-1/2 z-10" />
       </Swiper>
 
       {/* Custom navigation arrows */}
       <div
         ref={prevRef}
-        className="absolute bottom-6 left-6 z-20 w-10 h-10 bg-black/40 text-white rounded-lg flex items-center justify-center cursor-pointer border border-white"
+        className="absolute bottom-6 left-6 z-20 w-10 h-10 bg-black/40 text-white rounded-lg flex items-center justify-center cursor-pointer border border-white lg:hidden group-hover:flex"
       >
         <ArrowLeft className="w-5 h-5 rotate-180" />
       </div>
       <div
         ref={nextRef}
-        className="absolute bottom-6 right-6 z-20 w-10 h-10 bg-black/40 text-white rounded-lg flex items-center justify-center cursor-pointer border border-white"
+        className="absolute bottom-6 right-6 z-20 w-10 h-10 bg-black/40 text-white rounded-lg flex items-center justify-center cursor-pointer border border-white lg:hidden group-hover:flex"
       >
         <ArrowRight className="w-5 h-5" />
       </div>
