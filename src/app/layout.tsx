@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import type { ReactNode } from "react";
 import "./globals.css";
 
@@ -9,7 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
