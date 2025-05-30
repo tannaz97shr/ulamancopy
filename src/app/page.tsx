@@ -1,7 +1,8 @@
 import ExperienceSection from "@/components/ExperienceSection";
 import Hero from "@/components/Hero";
+import NatureSection from "@/components/NatureSection";
 import TextIntro from "@/components/TextIntro";
-import VillasSection from "@/components/VillaSection";
+import VillaSection from "@/components/VillaSection";
 
 export default async function HomePage() {
   return (
@@ -9,7 +10,8 @@ export default async function HomePage() {
       <Hero />
       <TextIntro />
       <ExperienceSection />
-      <VillasSection />
+      <VillaSection />
+      <NatureSection />
     </>
   );
 }

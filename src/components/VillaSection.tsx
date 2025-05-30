@@ -65,7 +65,7 @@ export default function VillaSection() {
         </div>
 
         {/* Swiper carousel */}
-        <div className="flex-1 lg:w-full">
+        <div className="flex-1 max-w-[94%]">
           <Swiper
             modules={[Navigation]}
             spaceBetween={16}
