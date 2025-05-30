@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${playfair.variable}`}>
-      <body>
+      <body className="bg-beige">
         <Header />
         {children}
       </body>

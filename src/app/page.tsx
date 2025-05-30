@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
+import TextIntro from "@/components/TextIntro";
 import { fetchSiteData } from "@/lib/api";
 
 export default async function HomePage() {
@@ -22,6 +23,7 @@ export default async function HomePage() {
   return (
     <>
       <Hero {...data.hero} />
+      <TextIntro />
       <About {...data.about} />
       <Features items={data.features} />
       <Testimonials items={data.testimonials} />
