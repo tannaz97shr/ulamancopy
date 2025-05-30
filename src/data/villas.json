@@ -1,0 +1,65 @@
+[
+  {
+    "id": "floating-lake",
+    "title": "Floating Lake",
+    "description": "A luxurious floating villa on Ulaman's bio-filtered lake.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZjNQMkMTzAJOCfIQ_best-resort-ulaman.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zlbe8aWtHYXtT4Qk_lakevillabali.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zlbe8KWtHYXtT4Qj_lakevilla2.jpg?auto=format,compress"
+    ]
+  },
+  {
+    "id": "cocoon-jungle",
+    "title": "Cocoon Jungle",
+    "description": "Indulge in an unparalleled blend of exotic elegance and coziness.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZjHaf0MTzAJOCdga_ulaman-eco-retreat.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZjeopEMTzAJOCiqz_resorts-bali.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZjeookMTzAJOCiqx_hotel-indonesia.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZjHZjEMTzAJOCdgU_ulaman.jpg?auto=format,compress"
+    ]
+  },
+  {
+    "id": "avatar-tree-house",
+    "title": "Avatar Tree House",
+    "description": "Experience luxury in an avatar-inspired sky villa with 180° views.",
+    "images": [
+      "https://images.prismic.io/ulaman/Zpct2h5LeNNTxOAy_skyvilla.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZjejSkMTzAJOCioK_bali-hotels.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZlbjEqWtHYXtT4TY_skyvillabathroom.jpg?auto=format,compress"
+    ]
+  },
+  {
+    "id": "jungle-garden-pool",
+    "title": "Jungle Garden Pool",
+    "description": "An ultimate private pool retreat at Ulaman.",
+    "images": [
+      "https://images.prismic.io/ulaman/Zj2YskMTzAJOCrKK_eco-luxury-resort-indonesia.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zj2WyUMTzAJOCrJ8_eco-resort-bali.jpg?auto=format,compres",
+      "https://images.prismic.io/ulaman/ZpHttR5LeNNTxIQb_flower-bath.jpg?auto=format,compress"
+    ]
+  },
+  {
+    "id": "grand-lagoon-private-pool",
+    "title": "Grand Lagoon Private Pool",
+    "description": "Indulge in an exclusive riverside villa with jungle lagoon view.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZpH1_h5LeNNTxIQh_grand-lagoon.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zj16UkMTzAJOCrGd_hotels-in-bali.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zj16TkMTzAJOCrGY_eco-luxury-resort-indonesia.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zoor6h5LeNNTw3wE_ulaman.jpg?auto=format,compress"
+    ]
+  },
+  {
+    "id": "ulin-poolside",
+    "title": "Ulin Poolside",
+    "description": "A luxurious jungle ground-floor oasis with direct access to the infinity pool.",
+    "images": [
+      "https://images.prismic.io/ulaman/Zlfnx6WtHYXtT6xP_ecoresort-bali.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZlfnxaWtHYXtT6xN_eco-retreat.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZpH8iR5LeNNTxIQk_ulaman.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZlfnyaWtHYXtT6xR_luxury-eco-resort-bali.jpg?auto=format,compress"
+    ]
+  }
+]
