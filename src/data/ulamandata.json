@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "Reconnect with Nature",
+    "subtitle": "Experience a luxurious eco-friendly resort in the heart of Bali.",
+    "backgroundImage": "/images/hero.jpg"
+  },
+  "about": {
+    "heading": "Our Philosophy",
+    "content": "Ulaman Eco Retreat offers a serene sanctuary where sustainable design meets comfort and luxury. Embrace tranquility, wellness, and eco-conscious living."
+  },
+  "features": [
+    {
+      "title": "Eco-Friendly Villas",
+      "description": "Designed with natural materials and built in harmony with the landscape.",
+      "image": "/images/villas.jpg"
+    },
+    {
+      "title": "Wellness Spa",
+      "description": "Indulge in therapeutic treatments in a serene riverside spa.",
+      "image": "/images/spa.jpg"
+    },
+    {
+      "title": "Organic Dining",
+      "description": "Savor gourmet dishes made from locally sourced organic ingredients.",
+      "image": "/images/dining.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Anna R.",
+      "review": "An unforgettable experience. Everything from the room to the food was impeccable."
+    },
+    {
+      "name": "James W.",
+      "review": "The perfect blend of luxury and nature. Will definitely return!"
+    }
+  ]
+}
