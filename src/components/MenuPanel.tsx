@@ -49,7 +49,7 @@ export default function MenuPanel({ onClose }: { onClose: () => void }) {
     });
 
   return (
-    <div className="bg-beige text-gold w-full h-screen px-4 pt-6 pb-0 z-40 flex flex-col justify-between">
+    <div className="bg-beige text-gold w-full min-h-screen px-4 pt-6 pb-0 z-40 flex flex-col justify-between">
       {/* Mobile layout */}
       <div className="flex flex-col items-center lg:hidden">
         <nav className="flex flex-wrap justify-start gap-x-2 gap-y-3 text-[22px] font-light text-center max-w-screen-md mt-12 mb-10 leading-relaxed">
@@ -76,7 +76,6 @@ export default function MenuPanel({ onClose }: { onClose: () => void }) {
         </nav>
 
         <div className="w-full flex justify-between items-start px-4 mb-6 text-gold text-sm">
-          {/* Social links */}
           <div className="flex flex-col gap-2">
             <p>
               Whatsapp <span className="mx-1">/</span> Directions
@@ -87,7 +86,6 @@ export default function MenuPanel({ onClose }: { onClose: () => void }) {
             <p>/ Facebook</p>
           </div>
 
-          {/* Tripadvisor logo */}
           <Image
             src="/tripadvisor-logo.svg"
             alt="Tripadvisor Travelers' Choice Awards 2024"
@@ -99,13 +97,26 @@ export default function MenuPanel({ onClose }: { onClose: () => void }) {
       </div>
 
       {/* Desktop layout */}
-      <div className="hidden lg:flex flex-1 flex-col justify-between h-full">
-        <div className="flex-1 flex justify-between items-center">
-          <nav className="flex flex-col gap-2 text-[22px] font-light items-end text-right">
-            {renderLinks(leftMenuItems)}
-          </nav>
+      <div className="hidden lg:flex flex-col flex-grow justify-between min-h-screen pt-16 pb-10 px-12">
+        <div className="flex flex-1 items-start justify-between">
+          {/* Left menu + socials */}
+          <div className="flex flex-col gap-6 items-end text-right">
+            <nav className="flex flex-col gap-3 text-[22px] font-light">
+              {renderLinks(leftMenuItems)}
+            </nav>
+            <div className="text-sm text-gold flex flex-col gap-1">
+              <p>
+                Whatsapp <span className="mx-1">/</span> Directions
+              </p>
+              <p>
+                / TripAdvisor <span className="mx-1">/</span> Instagram
+              </p>
+              <p>/ Facebook</p>
+            </div>
+          </div>
 
-          <div className="w-[300px] h-[500px] overflow-hidden rounded-b-full rounded-t-full">
+          {/* Center image */}
+          <div className="w-[300px] h-[500px] overflow-hidden rounded-full">
             <Image
               src="/images/menu-hotel.avif"
               alt="Ulaman Resort"
@@ -115,31 +126,22 @@ export default function MenuPanel({ onClose }: { onClose: () => void }) {
             />
           </div>
 
-          <nav className="flex flex-col gap-2 text-[22px] font-light items-start text-left">
-            {renderLinks(rightMenuItems)}
-          </nav>
-        </div>
-
-        <div className="flex items-start justify-between mt-6 text-sm px-4">
-          <div className="flex flex-col gap-2">
-            <p>
-              Whatsapp <span className="mx-1">/</span> Directions
-            </p>
-            <p>
-              / TripAdvisor <span className="mx-1">/</span> Instagram
-            </p>
-            <p>/ Facebook</p>
+          {/* Right menu + tripadvisor logo */}
+          <div className="flex flex-col gap-6 items-start text-left">
+            <nav className="flex flex-col gap-3 text-[22px] font-light">
+              {renderLinks(rightMenuItems)}
+            </nav>
+            <Image
+              src="/tripadvisor-logo.svg"
+              alt="Tripadvisor Travelers' Choice Awards 2024"
+              width={90}
+              height={90}
+            />
           </div>
-
-          <Image
-            src="/tripadvisor-logo.svg"
-            alt="Tripadvisor Travelers' Choice Awards 2024"
-            width={90}
-            height={90}
-          />
         </div>
       </div>
 
+      {/* Mobile image */}
       <div className="lg:hidden w-full overflow-hidden rounded-t-full h-[300px]">
         <Image
           src="/images/menu-hotel.avif"

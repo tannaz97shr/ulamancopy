@@ -23,10 +23,11 @@ export default function MobileHeader() {
       {/* Header */}
       <motion.header
         animate={{
-          backgroundColor: isScrolled ? "#f0ebe2" : "rgba(0, 0, 0, 0)",
+          backgroundColor:
+            menuOpen || isScrolled ? "#f0ebe2" : "rgba(0, 0, 0, 0)",
         }}
         transition={{ duration: 0.3 }}
-        className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center"
+        className="fixed top-0 left-0 w-full z-50 px-6 py-8 flex justify-between items-center font-sans"
       >
         {/* Left: Hamburger + Nav */}
         <div className="flex items-center gap-8">
@@ -66,7 +67,7 @@ export default function MobileHeader() {
                 key={item}
                 href={`/${item.toLowerCase()}`}
                 className={`transition-all duration-300 ${
-                  isScrolled ? "text-gold" : "text-white"
+                  isScrolled || menuOpen ? "text-gold" : "text-white"
                 }`}
               >
                 {item}
@@ -79,7 +80,7 @@ export default function MobileHeader() {
         <motion.div
           animate={{ scale: isScrolled ? 0.75 : 1 }}
           transition={{ duration: 0.3 }}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center md:absolute md:left-1/2 md:-translate-x-1/2"
         >
           <Image
             src="/ulaman-logo.svg"
@@ -98,7 +99,9 @@ export default function MobileHeader() {
           <Link
             href="/book"
             className={`px-5 py-2 border text-sm font-medium transition-all duration-300 rounded-tl-xl rounded-br-xl ${
-              isScrolled ? "text-gold border-gold" : "text-white border-white"
+              isScrolled || menuOpen
+                ? "text-gold border-gold"
+                : "text-white border-white"
             }`}
           >
             Stay With Us
