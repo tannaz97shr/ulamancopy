@@ -1,0 +1,26 @@
+[
+  {
+    "id": "lovers-getaway",
+    "title": "The Lovers Getaway",
+    "duration": "3 Days / 2 Nights",
+    "image": "https://images.prismic.io/ulaman/ZjrlVEMTzAJOCn4M_loversGetaway.jpg?auto=format,compress"
+  },
+  {
+    "id": "wonders-wellness",
+    "title": "The Wonders Of Wellness",
+    "duration": "4 Days / 3 Nights",
+    "image": "https://images.prismic.io/ulaman/ZnWOM5bWFbowew-4_eco-retreat.jpg?auto=format,compress"
+  },
+  {
+    "id": "avatar-experience",
+    "title": "The Avatar Experience",
+    "duration": "5 Days / 4 Nights",
+    "image": "https://images.prismic.io/ulaman/Zjrn-kMTzAJOCn4c_eco-luxury-hotel-bali.jpg?auto=format,compress"
+  },
+  {
+    "id": "ultimate-honeymoon",
+    "title": "The Ultimate Honeymoon",
+    "duration": "3 Days / 2 Nights",
+    "image": "https://images.prismic.io/ulaman/ZjebwkMTzAJOCiml_Ulaman-eco-retreat.jpg?auto=format,compress"
+  }
+]

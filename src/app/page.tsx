@@ -1,6 +1,7 @@
 import ExperienceSection from "@/components/ExperienceSection";
 import Hero from "@/components/Hero";
 import NatureSection from "@/components/NatureSection";
+import PackageSection from "@/components/PackagesSection";
 import TextIntro from "@/components/TextIntro";
 import VillaSection from "@/components/VillaSection";
 
@@ -12,6 +13,7 @@ export default async function HomePage() {
       <ExperienceSection />
       <VillaSection />
       <NatureSection />
+      <PackageSection />
     </>
   );
 }
