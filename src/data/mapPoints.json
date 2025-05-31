@@ -1,0 +1,79 @@
+[
+  {
+    "id": "floating-villas",
+    "label": "Floating Villas",
+    "icon": "IconBed",
+    "x": 20.5,
+    "y": 30.5
+  },
+  {
+    "id": "cocoon-villas",
+    "label": "Cocoon Villas",
+    "icon": "IconBed",
+    "x": 27.8,
+    "y": 33.2
+  },
+  {
+    "id": "spa",
+    "label": "Spa Center",
+    "icon": "IconSpa",
+    "x": 30.1,
+    "y": 47.5
+  },
+  {
+    "id": "yoga-shala",
+    "label": "Yoga Shala",
+    "icon": "IconYoga",
+    "x": 41.7,
+    "y": 40
+  },
+  {
+    "id": "restaurant",
+    "label": "Restaurant",
+    "icon": "IconDining",
+    "x": 50.6,
+    "y": 55.4
+  },
+  {
+    "id": "pool",
+    "label": "Main Pool",
+    "icon": "IconPool",
+    "x": 23.3,
+    "y": 39.5
+  },
+  {
+    "id": "activities-deck",
+    "label": "Activities Deck",
+    "icon": "IconActivity",
+    "x": 70.1,
+    "y": 35.2
+  },
+  {
+    "id": "garden",
+    "label": "Organic Garden",
+    "icon": "IconLeaf",
+    "x": 38.0,
+    "y": 15
+  },
+  {
+    "id": "meditation-hall",
+    "label": "Meditation Hall",
+    "icon": "IconMeditation",
+    "x": 54.4,
+    "y": 35
+  },
+  {
+    "id": "gift-shop",
+    "label": "Gift Shop",
+    "icon": "IconGift",
+    "x": 72.5,
+    "y": 28.4
+  },
+  {
+    "id": "reception",
+    "label": "Reception",
+    "icon": "IconInfo",
+    "x": 67.8,
+    "y": 80
+  }
+]

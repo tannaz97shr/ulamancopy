@@ -1,7 +1,7 @@
 import { default as DineSection } from "@/components/DineSection";
-import DiscoverSection from "@/components/DiscoverSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import Hero from "@/components/Hero";
+import MapSection from "@/components/MapSection";
 import NatureSection from "@/components/NatureSection";
 import PackageSection from "@/components/PackagesSection";
 import RelaxationSection from "@/components/RelaxationSection";
@@ -21,7 +21,7 @@ export default async function HomePage() {
       <RetreatSection />
       <RelaxationSection />
       <DineSection />
-      <DiscoverSection />
+      <MapSection />
     </>
   );
 }
