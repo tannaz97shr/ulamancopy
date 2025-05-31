@@ -18,12 +18,11 @@ function ParallaxImage({ src }: { src: string }) {
   });
 
   const y = useTransform(scrollYProgress, [0, 1], ["-40%", "40%"]);
-  // const scale = useTransform(scrollYProgress, [0, 1], [1.2, 1.35]);
 
   return (
     <div
       ref={ref}
-      className="overflow-hidden relative rounded-xl aspect-[3/4] w-full"
+      className="overflow-hidden relative rounded md:rounded-xl aspect-[1/2] md:aspect-[3/4] w-full"
     >
       <motion.div
         style={{ y }}
@@ -46,9 +45,11 @@ export default function DineSection() {
         VISIT THE WEBSITE
       </a>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-6 max-w-6xl w-full">
         {images.map((src, i) => (
-          <ParallaxImage key={i} src={src} />
+          <div key={i} className={i === 2 ? "hidden md:block" : "block"}>
+            <ParallaxImage src={src} />
+          </div>
         ))}
       </div>
     </section>
