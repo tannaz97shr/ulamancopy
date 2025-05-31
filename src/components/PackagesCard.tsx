@@ -10,7 +10,7 @@ export default function PackageCard({ image, title, duration }: PackageProps) {
   return (
     <div className="bg-beige rounded-2xl p-4 relative">
       <div className=" bg-gold w-4/5 h-1/2 absolute top-0 left-0 rounded-2xl opacity-50"></div>
-      <div className="overflow-hidden rounded-2xl aspect-[4/5] z-10 relative">
+      <div className="overflow-hidden rounded-2xl z-10 relative">
         <Image
           src={image}
           alt={title}
