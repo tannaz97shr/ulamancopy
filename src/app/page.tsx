@@ -1,3 +1,5 @@
+import { default as DineSection } from "@/components/DineSection";
+import DiscoverSection from "@/components/DiscoverSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import Hero from "@/components/Hero";
 import NatureSection from "@/components/NatureSection";
@@ -18,6 +20,8 @@ export default async function HomePage() {
       <PackageSection />
       <RetreatSection />
       <RelaxationSection />
+      <DineSection />
+      <DiscoverSection />
     </>
   );
 }
