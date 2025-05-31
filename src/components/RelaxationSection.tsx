@@ -7,6 +7,8 @@ export default function RelaxationSection() {
   const ref = useRef(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -23,12 +25,19 @@ export default function RelaxationSection() {
 
     if (isOpen) {
       video.pause();
-      video.currentTime = 0;
     } else {
       video.play();
     }
 
     setIsOpen((prev) => !prev);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setMousePosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
   };
 
   return (
@@ -46,6 +55,9 @@ export default function RelaxationSection() {
         <motion.div
           layout
           onClick={() => toggleVideo()}
+          onMouseMove={handleMouseMove}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
           className="absolute top-0 bottom-0 my-auto cursor-pointer overflow-hidden z-10"
           initial={{
             width: "80%",
@@ -65,7 +77,7 @@ export default function RelaxationSection() {
             borderBottomLeftRadius: "0px",
             borderBottomRightRadius: "0px",
           }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
+          transition={{ duration: 0.9, ease: "easeInOut" }}
         >
           <video
             ref={videoRef}
@@ -76,6 +88,22 @@ export default function RelaxationSection() {
             preload="metadata"
             onClick={(e) => e.stopPropagation()} // Prevent bubbling
           />
+          {hovered && (
+            <motion.div
+              className="absolute z-20 flex items-center gap-2 px-4 py-1 bg-gold text-white text-sm font-medium rounded-full pointer-events-none"
+              style={{
+                top: mousePosition.y - 40,
+                left: mousePosition.x,
+                transform: "translateX(-50%)",
+              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <span className="w-2 h-2 rounded-full bg-white" />
+              {isOpen ? "Stop Video" : "Play Video"}
+            </motion.div>
+          )}
         </motion.div>
         <motion.div
           style={{ x: xHealing }}
