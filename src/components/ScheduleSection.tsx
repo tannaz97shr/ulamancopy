@@ -60,15 +60,17 @@ export default function ScheduleSection() {
             </tr>
           </thead>
           <tbody>
-            {schedule.map((row) => (
+            {schedule.map((row, j) => (
               <tr key={row.time}>
-                <td className="text-gold text-sm py-4 pr-2 border-b border-r border-gold align-top">
+                <td className="text-gold text-sm py-4 pr-2 border-t border-r border-gold align-top">
                   {row.time}
                 </td>
                 {row.activities.map((activity, i) => (
                   <td
                     key={i}
-                    className="border-b border-r border-gold h-[80px] align-top px-2"
+                    className={`  border-gold h-[80px] align-top px-2 ${
+                      j !== schedule.length - 1 && "border-b"
+                    } ${i !== row.activities.length - 1 && "border-r"}`}
                   >
                     {activity ? (
                       <div
