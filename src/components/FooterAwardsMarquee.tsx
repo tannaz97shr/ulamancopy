@@ -14,7 +14,7 @@ const awardLogos = [
 
 export default function FooterAwardsMarquee() {
   return (
-    <div className=" overflow-hidden py-6">
+    <div className=" overflow-hidden py-6 w-full">
       <div className="relative w-full">
         <div className="flex gap-12 animate-marquee whitespace-nowrap">
           {awardLogos.concat(awardLogos).map((src, i) => (

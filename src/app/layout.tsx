@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 import Footer from "@/components/Footer";
+import PackagesMarquee from "@/components/PackagesMarquee";
 import { Montserrat, Playfair_Display } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         {children}
         <Footer />
+        <PackagesMarquee />
       </body>
     </html>
   );
