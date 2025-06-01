@@ -1,0 +1,42 @@
+[
+  {
+    "time": "8 AM",
+    "activities": [
+      "Yoga (All Levels)",
+      "Yoga (All Levels)",
+      "Yoga (All Levels)",
+      "Yoga (All Levels)",
+      "Yoga (All Levels)",
+      "Yoga (All Levels)",
+      "Yoga (All Levels)"
+    ]
+  },
+  {
+    "time": "12 PM",
+    "activities": [
+      "Sound Healing",
+      "Sound Healing",
+      "Sound Healing",
+      "Sound Healing",
+      "Sound Healing",
+      "Sound Healing",
+      "Sound Healing"
+    ]
+  },
+  {
+    "time": "1 PM",
+    "activities": ["", "", "", "", "", "", ""]
+  },
+  {
+    "time": "5 PM",
+    "activities": [
+      "Yin Flow",
+      "Yin Flow",
+      "Yin Flow",
+      "Yin Flow",
+      "Yin Flow",
+      "Yin Flow",
+      "Yin Flow"
+    ]
+  }
+]

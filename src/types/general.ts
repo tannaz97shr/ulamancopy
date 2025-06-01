@@ -8,3 +8,8 @@ export type MapPoint = {
   description: string;
   images: string[];
 };
+
+export interface ISchedule {
+  activities: string[];
+  time: string;
+}

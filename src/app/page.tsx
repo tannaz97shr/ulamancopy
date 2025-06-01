@@ -7,6 +7,7 @@ import NatureSection from "@/components/NatureSection";
 import PackageSection from "@/components/PackagesSection";
 import RelaxationSection from "@/components/RelaxationSection";
 import RetreatSection from "@/components/RetreatSection";
+import ScheduleSection from "@/components/ScheduleSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import TextIntro from "@/components/TextIntro";
 import VillaSection from "@/components/VillaSection";
@@ -26,6 +27,7 @@ export default async function HomePage() {
       <MapSection />
       <TestimonialsSection />
       <ImageFadeSection />
+      <ScheduleSection />
     </>
   );
 }
