@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ArrowLeft, ArrowRight } from "./Icons";
+import { ArrowRight } from "./Icons";
 import Spinner from "./Spinner";
 
 type Testimonial = {
@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
                   : "border-gold text-gold cursor-pointer hover:bg-gold hover:text-white"
               } transition`}
             >
-              <ArrowLeft className="w-5 h-5 rotate-180" />
+              <ArrowRight className="w-5 h-5 rotate-180" />
             </div>
 
             <div

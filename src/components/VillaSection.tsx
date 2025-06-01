@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ArrowLeft, ArrowRight } from "./Icons";
+import { ArrowRight } from "./Icons";
 import Spinner from "./Spinner";
 import VillaCard from "./VillaCard";
 
@@ -69,7 +69,7 @@ export default function VillaSection() {
                 : "border-gold hover:bg-gold hover:text-white cursor-pointer"
             }`}
           >
-            <ArrowLeft className="w-5 h-5 rotate-180" />
+            <ArrowRight className="w-5 h-5 rotate-180" />
           </div>
 
           <div

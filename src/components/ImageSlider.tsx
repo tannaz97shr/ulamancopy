@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ArrowLeft, ArrowRight } from "./Icons";
+import { ArrowRight } from "./Icons";
 
 export default function ImageSlider({ images }: { images: string[] }) {
   const prevRef = useRef<HTMLDivElement>(null);
@@ -66,7 +66,7 @@ export default function ImageSlider({ images }: { images: string[] }) {
         ref={prevRef}
         className="absolute bottom-4 left-4 z-20 w-10 h-10 bg-black/40 text-white rounded-lg flex items-center justify-center cursor-pointer border border-white lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300"
       >
-        <ArrowLeft className="w-5 h-5 rotate-180" />
+        <ArrowRight className="w-5 h-5 rotate-180" />
       </div>
 
       <div

@@ -22,26 +22,6 @@ export const ArrowRight = (props: IconProps) => {
   );
 };
 
-export const ArrowLeft = (props: IconProps) => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      {...props}
-    >
-      <path d="M18 8L22 12L18 16"></path>
-      <path d="M2 12H22"></path>
-    </svg>
-  );
-};
-
 export const IconBed = (props: IconProps) => {
   return (
     <svg

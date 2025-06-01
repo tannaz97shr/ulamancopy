@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ArrowLeft, ArrowRight } from "./Icons";
+import { ArrowRight } from "./Icons";
 import PackageCard from "./PackagesCard";
 
 type Package = {
@@ -69,7 +69,7 @@ export default function PackageSection() {
                 : "border border-gold text-gold hover:bg-gold hover:text-white cursor-pointer"
             }`}
           >
-            <ArrowLeft className="w-5 h-5 rotate-180" />
+            <ArrowRight className="w-5 h-5 rotate-180" />
           </div>
 
           <div

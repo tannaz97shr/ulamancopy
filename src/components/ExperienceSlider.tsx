@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ArrowLeft, ArrowRight } from "./Icons";
+import { ArrowRight } from "./Icons";
 
 const images = [
   "/images/slide-1.avif",
@@ -84,7 +84,7 @@ export default function ExperienceSlider() {
             : "bg-black/40 text-white"
         }`}
       >
-        <ArrowLeft className="w-5 h-5 rotate-180" />
+        <ArrowRight className="w-5 h-5 rotate-180" />
       </div>
 
       <div
