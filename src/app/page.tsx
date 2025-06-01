@@ -1,3 +1,4 @@
+import CalloutSection from "@/components/CalloutSection";
 import DineSection from "@/components/DineSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import Hero from "@/components/Hero";
@@ -28,6 +29,7 @@ export default async function HomePage() {
       <TestimonialsSection />
       <ImageFadeSection />
       <ScheduleSection />
+      <CalloutSection />
     </>
   );
 }
