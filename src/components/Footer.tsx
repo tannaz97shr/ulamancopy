@@ -4,11 +4,12 @@ import FooterAdultSelector from "./FooterAdultSelector";
 import FooterAwardsMarquee from "./FooterAwardsMarquee";
 import FooterConnectSection from "./FooterConnectSection";
 import FooterExploreMenu from "./FooterExploreMenu";
+import FooterInfo from "./FooterInfo";
 import FooterSubscribeForm from "./FooterSubscribeForm";
 
 export default function Footer() {
   return (
-    <div className="bg-dark-emphasis text-white py-12 px-6 text-sm flex flex-col items-center gap-10">
+    <div className="bg-dark-emphasis text-white py-12 text-sm flex flex-col items-center gap-10 px-[8rem]">
       {/* Review Stars */}
       <div className="space-y-1 text-center">
         <p className="flex justify-center items-center gap-2">
@@ -24,7 +25,7 @@ export default function Footer() {
       </div>
 
       {/* Booking Form */}
-      <div className="w-full flex flex-col gap-10 md:flex-row max-w-[948px]">
+      <div className="w-full flex flex-col gap-10 md:flex-row">
         <div className="flex flex-wrap justify-around items-between w-full items-center gap-4 text-white lg:border-r lg:border-white">
           <span className="mb-1">Check In</span>
 
@@ -65,6 +66,7 @@ export default function Footer() {
         <FooterConnectSection />
       </div>
       <FooterAwardsMarquee />
+      <FooterInfo />
     </div>
   );
 }
