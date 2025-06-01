@@ -35,6 +35,7 @@ I’d structure the JSON to be modular, semantic, and future-ready:
 ```
 
 Benefits:
+
 - Easily expandable with more types like events, services, etc.
 - i18n (translation support) can be added without refactoring.
 - Promotes consistent structure and separation of concerns.
@@ -50,6 +51,7 @@ I would use:
 - **tRPC + Prisma**: for full-stack type safety and data modeling.
 
 **Why?**
+
 - Next.js API routes integrate directly into the app and deploy instantly.
 - tRPC ensures typed contract between frontend and backend.
 - Prisma helps scale with a reliable data layer.
@@ -59,6 +61,7 @@ I would use:
 ## 3. How would you configure a custom domain (e.g., www.clientwebsite.com) to point to your deployed project on Vercel?
 
 Steps:
+
 1. In Vercel dashboard: go to your project → Settings → Domains.
 2. Click "Add" and enter `www.clientwebsite.com`.
 3. Update DNS settings:
@@ -71,11 +74,13 @@ Steps:
 ## 4. If your project requires an admin panel to manage the website content, what technologies and approaches would you choose?
 
 Options:
+
 - **Sanity / Strapi** (Headless CMS with UI).
 - **Next.js + Prisma + Clerk/Auth0** for full control.
 - **Google Sheets / Notion API** for early-stage projects.
 
 Approach:
+
 - Auth protection.
 - Structured schema for content types.
 - Rich text editor for blog-style content.
@@ -86,6 +91,7 @@ Approach:
 ## 5. What techniques would you use to ensure the website loads quickly even on slow internet connections?
 
 Performance techniques:
+
 - `next/image` optimization.
 - Font subsetting and system fallbacks.
 - Lazy loading images and components.
@@ -98,6 +104,7 @@ Performance techniques:
 ## 6. If you implement a form, how would you securely send the data to the backend server?
 
 Steps:
+
 1. Use `fetch()` to send POST data.
 2. Validate on both frontend and backend.
 3. Sanitize inputs to prevent injection.
@@ -115,7 +122,3 @@ Optional: store in Firestore/PostgreSQL with Prisma.
 - Use placeholders (blurred previews).
 - Store on CDN (Vercel, Cloudinary).
 - Avoid inline base64 unless small (e.g. logos/icons).
-
----
-
-Let me know if you need anything else. Happy building! 🚀
