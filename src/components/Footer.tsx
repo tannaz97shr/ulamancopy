@@ -1,4 +1,5 @@
 import { StarIcon } from "@heroicons/react/24/solid"; // or your own icon
+import Image from "next/image";
 import FooterAdultSelector from "./FooterAdultSelector";
 
 export default function Footer() {
@@ -36,6 +37,22 @@ export default function Footer() {
           <button className="border border-white px-8 py-2 rounded-tl-lg rounded-br-lg text-white hover:bg-white hover:text-dark-emphasis transition">
             Search
           </button>
+        </div>
+      </div>
+
+      <div className="flex flex-col w-full gap-8  md:flex-row-reverse md:mt-10">
+        <div className="w-full aspect-square relative">
+          <Image src={"/images/footer-map.avif"} alt={"footer map"} fill />
+        </div>
+        <div className="flex flex-col w-full gap-6 md:justify-center">
+          <h2 className="font-semibold text-2xl">
+            Tucked Within Majestic Balinese Nature.
+          </h2>
+          <p>
+            Strategically located near popular areas like Canggu and Ubud,
+            experience tranquil nature and luxury. With endless activities,
+            you&apos;ll never want to leave Ulaman.
+          </p>
         </div>
       </div>
     </div>
