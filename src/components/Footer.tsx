@@ -1,4 +1,4 @@
-import { StarIcon } from "@heroicons/react/24/solid"; // or your own icon
+import { StarIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import FooterAdultSelector from "./FooterAdultSelector";
 import FooterAwardsMarquee from "./FooterAwardsMarquee";

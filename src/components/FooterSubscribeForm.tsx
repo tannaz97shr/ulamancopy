@@ -8,7 +8,6 @@ export default function FooterSubscribeForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // You can connect this with backend API
     console.log("Subscribed:", { name, email });
   };
 

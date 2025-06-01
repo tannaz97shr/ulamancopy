@@ -43,8 +43,6 @@ export default function ExperienceSlider() {
     }
   }, [swiperInstance]);
 
-  console.log("set is beg", isBeginning);
-
   return (
     <div className="relative max-w-5xl mx-auto overflow-hidden rounded-tl-3xl rounded-br-3xl lg:w-1/2 group">
       <Swiper

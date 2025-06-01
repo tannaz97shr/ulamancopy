@@ -11,7 +11,6 @@ export default function Hero() {
 
     const onMessage = (event: MessageEvent) => {
       if (event.origin !== "https://www.youtube.com") return;
-      // Listen for events from YouTube API if needed
     };
 
     window.addEventListener("message", onMessage);

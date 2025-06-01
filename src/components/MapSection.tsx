@@ -5,7 +5,7 @@ import { MapPoint } from "@/types/general";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { iconRegistry } from "./Icons";
-import MapDetailPanel from "./MapDetailPanel"; // ← you must have this
+import MapDetailPanel from "./MapDetailPanel";
 import Spinner from "./Spinner";
 
 export default function MapSection() {

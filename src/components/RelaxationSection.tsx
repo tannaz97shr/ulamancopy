@@ -19,7 +19,6 @@ export default function RelaxationSection() {
   const xHealing = useTransform(scrollYProgress, [0, 1], ["-50vw", "50vw"]);
 
   const toggleVideo = () => {
-    console.log("toggle");
     const video = videoRef.current;
     if (!video) return;
 
@@ -86,7 +85,7 @@ export default function RelaxationSection() {
             muted
             playsInline
             preload="metadata"
-            onClick={(e) => e.stopPropagation()} // Prevent bubbling
+            onClick={(e) => e.stopPropagation()}
           />
           {hovered && (
             <motion.div
