@@ -22,7 +22,7 @@ export default function Hero() {
     <section className="relative w-full h-screen overflow-hidden">
       {/* YouTube Video Background Container */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
-        <div className="absolute top-1/2 left-1/2 w-[177.78vh] h-[100vh] -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-1/2 left-1/2 h-[100vh] -translate-x-1/2 -translate-y-1/2">
           {/* <iframe
             ref={iframeRef}
             className="w-full h-full"
