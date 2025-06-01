@@ -19,15 +19,15 @@ export default function Hero() {
 
   return (
     <section className="relative w-full h-screen overflow-hidden">
-      {/* YouTube Video Background Container */}
-      <div className="absolute top-0 left-0 w-full h-full z-0">
-        <div className="absolute top-1/2 left-1/2 w-[177.78vh] h-[100vh] -translate-x-1/2 -translate-y-1/2">
+      {/* YouTube Video Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="relative w-full h-full">
           <iframe
             ref={iframeRef}
-            className="w-full h-full"
-            src="https://www.youtube.com/embed/pqkVOxt7Tk4?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=pqkVOxt7Tk4&modestbranding=1&enablejsapi=1"
-            title="Ulaman Resort Video"
-            allow="autoplay; fullscreen"
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/pqkVOxt7Tk4?autoplay=1&mute=1&loop=1&playlist=pqkVOxt7Tk4&controls=0&modestbranding=1&showinfo=0&rel=0&enablejsapi=1"
+            title="Ulaman Hero Video"
+            allow="autoplay; fullscreen; encrypted-media"
             allowFullScreen
           />
         </div>
