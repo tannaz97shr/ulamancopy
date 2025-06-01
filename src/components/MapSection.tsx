@@ -38,13 +38,13 @@ export default function MapSection() {
       </div>
 
       {/* Map and Points */}
-      <div className="relative w-full max-w-screen-xl mx-auto aspect-[16/9]">
+      <div className="relative w-full max-w-screen-xl mx-auto h-[500px] lg:aspect-[16/9] overflow-y-auto lg:overflow-visible">
         <Image
           src="/images/map.jpg"
           alt="Ulaman Map"
           fill
           priority
-          className="object-contain rounded-xl"
+          className="object-cover rounded-xl"
         />
 
         {points.map((point) => {

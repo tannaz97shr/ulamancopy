@@ -35,7 +35,7 @@ export default function MapDetailPanel({
 
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gold hover:text-black transition"
+          className="absolute top-4 right-4 text-gold hover:text-black transition z-20 bg-beige w-10 h-10 rounded-full"
         >
           ✕
         </button>
