@@ -22,6 +22,8 @@ export default function ExperienceSlider() {
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
   const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
 
   useEffect(() => {
     if (
@@ -41,14 +43,19 @@ export default function ExperienceSlider() {
     }
   }, [swiperInstance]);
 
+  console.log("set is beg", isBeginning);
+
   return (
     <div className="relative max-w-5xl mx-auto overflow-hidden rounded-tl-3xl rounded-br-3xl lg:w-1/2 group">
       <Swiper
         modules={[Navigation, Pagination, EffectFade]}
-        loop
         effect="fade"
         pagination={{ clickable: true }}
         onSwiper={(swiper) => setSwiperInstance(swiper)}
+        onSlideChange={(swiper) => {
+          setIsBeginning(swiper.isBeginning);
+          setIsEnd(swiper.isEnd);
+        }}
         className="relative w-full h-[600px]"
       >
         {images.map((src, index) => (
@@ -71,13 +78,20 @@ export default function ExperienceSlider() {
       {/* Custom navigation arrows */}
       <div
         ref={prevRef}
-        className="absolute bottom-6 left-6 z-20 w-10 h-10 bg-black/40 text-white rounded-lg flex items-center justify-center cursor-pointer border border-white lg:hidden group-hover:flex"
+        className={`absolute bottom-6 left-6 z-20 w-10 h-10 rounded-lg flex items-center justify-center cursor-pointer border border-white lg:hidden group-hover:flex ${
+          isBeginning
+            ? "opacity-40 cursor-not-allowed"
+            : "bg-black/40 text-white"
+        }`}
       >
         <ArrowLeft className="w-5 h-5 rotate-180" />
       </div>
+
       <div
         ref={nextRef}
-        className="absolute bottom-6 right-6 z-20 w-10 h-10 bg-black/40 text-white rounded-lg flex items-center justify-center cursor-pointer border border-white lg:hidden group-hover:flex"
+        className={`absolute bottom-6 right-6 z-20 w-10 h-10 rounded-lg flex items-center justify-center cursor-pointer border border-white lg:hidden group-hover:flex ${
+          isEnd ? "opacity-40 cursor-not-allowed" : "bg-black/40 text-white"
+        }`}
       >
         <ArrowRight className="w-5 h-5" />
       </div>

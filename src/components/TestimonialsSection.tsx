@@ -22,6 +22,9 @@ export default function TestimonialsSection() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
+
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
@@ -61,15 +64,24 @@ export default function TestimonialsSection() {
           <div className="flex gap-4 mb-6">
             <div
               ref={prevRef}
-              className="border border-gold w-14 h-14 flex items-center justify-center rounded-md cursor-pointer"
+              className={`w-14 h-14 flex items-center justify-center rounded-md border ${
+                isBeginning
+                  ? "border-gray-300 text-gray-300 cursor-not-allowed"
+                  : "border-gold text-gold cursor-pointer hover:bg-gold hover:text-white"
+              } transition`}
             >
-              <ArrowLeft className="w-5 h-5 rotate-180 text-gold" />
+              <ArrowLeft className="w-5 h-5 rotate-180" />
             </div>
+
             <div
               ref={nextRef}
-              className="border border-gold w-14 h-14 flex items-center justify-center rounded-md cursor-pointer"
+              className={`w-14 h-14 flex items-center justify-center rounded-md border ${
+                isEnd
+                  ? "border-gray-300 text-gray-300 cursor-not-allowed"
+                  : "border-gold text-gold cursor-pointer hover:bg-gold hover:text-white"
+              } transition`}
             >
-              <ArrowRight className="w-5 h-5 text-gold" />
+              <ArrowRight className="w-5 h-5" />
             </div>
           </div>
         </div>
@@ -77,10 +89,6 @@ export default function TestimonialsSection() {
         <Swiper
           modules={[Navigation]}
           slidesPerView={1}
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
-          }}
           onSwiper={(swiper) => {
             // @ts-ignore
             swiper.params.navigation.prevEl = prevRef.current;
@@ -88,6 +96,12 @@ export default function TestimonialsSection() {
             swiper.params.navigation.nextEl = nextRef.current;
             swiper.navigation.init();
             swiper.navigation.update();
+            setIsBeginning(swiper.isBeginning);
+            setIsEnd(swiper.isEnd);
+          }}
+          onSlideChange={(swiper) => {
+            setIsBeginning(swiper.isBeginning);
+            setIsEnd(swiper.isEnd);
           }}
         >
           {testimonials.map((t, i) => (

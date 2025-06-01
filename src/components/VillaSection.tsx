@@ -20,6 +20,8 @@ export default function VillaSection() {
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
   const [swiperInstance, setSwiperInstance] = useState<any>(null);
+  const [isBeginning, setIsBeginning] = useState(true);
+  const [isEnd, setIsEnd] = useState(false);
 
   useEffect(() => {
     fetchVillas()
@@ -61,13 +63,22 @@ export default function VillaSection() {
         <div className="hidden lg:flex flex-col gap-4 justify-center w-[10%]">
           <div
             ref={prevRef}
-            className="w-12 h-12 border border-gold text-gold hover:bg-gold hover:text-white rounded-md flex items-center justify-center cursor-pointer transition"
+            className={`w-12 h-12 border text-gold rounded-md flex items-center justify-center transition ${
+              isBeginning
+                ? "border-gray-300 text-gray-300 cursor-not-allowed"
+                : "border-gold hover:bg-gold hover:text-white cursor-pointer"
+            }`}
           >
             <ArrowLeft className="w-5 h-5 rotate-180" />
           </div>
+
           <div
             ref={nextRef}
-            className="w-12 h-12 border border-gold text-gold hover:bg-gold hover:text-white rounded-md flex items-center justify-center cursor-pointer transition"
+            className={`w-12 h-12 border text-gold rounded-md flex items-center justify-center transition ${
+              isEnd
+                ? "border-gray-300 text-gray-300 cursor-not-allowed"
+                : "border-gold hover:bg-gold hover:text-white cursor-pointer"
+            }`}
           >
             <ArrowRight className="w-5 h-5" />
           </div>
@@ -80,6 +91,10 @@ export default function VillaSection() {
             spaceBetween={16}
             slidesPerView={1.1}
             onSwiper={setSwiperInstance}
+            onSlideChange={(swiper) => {
+              setIsBeginning(swiper.isBeginning);
+              setIsEnd(swiper.isEnd);
+            }}
             breakpoints={{
               640: { slidesPerView: 1.2 },
               768: { slidesPerView: 2 },
