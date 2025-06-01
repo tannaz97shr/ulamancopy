@@ -36,7 +36,7 @@ function ParallaxImage({ src }: { src: string }) {
 
 export default function DineSection() {
   return (
-    <section className="bg-beige py-32 px-4 flex flex-col items-center">
+    <section className="py-32 px-4 flex flex-col items-center">
       <h2 className="text-gold text-xl font-serif text-center max-w-2xl leading-relaxed mb-4">
         A world-class gastronomic journey where nature’s finest ingredients meet
         culinary craftsmanship.
@@ -45,7 +45,7 @@ export default function DineSection() {
         VISIT THE WEBSITE
       </a>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-6 max-w-6xl w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-6 w-full">
         {images.map((src, i) => (
           <div key={i} className={i === 2 ? "hidden md:block" : "block"}>
             <ParallaxImage src={src} />

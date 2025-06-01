@@ -52,13 +52,13 @@ export default function VillaSection() {
   if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   return (
-    <section className="bg-beige py-16 px-4">
+    <section className="py-16 px-4">
       <h2 className="text-center text-gold text-xl max-w-xl mx-auto leading-relaxed font-serif mb-12">
         Discover cozy elegance, where tranquility <br /> meets Bali’s serene
         beauty.
       </h2>
 
-      <div className="relative flex max-w-screen-xl mx-auto">
+      <div className="relative flex mx-auto">
         {/* Arrows - left vertical stack on desktop */}
         <div className="hidden lg:flex flex-col gap-4 justify-center w-[10%]">
           <div

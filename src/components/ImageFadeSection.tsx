@@ -27,7 +27,7 @@ export default function ImageFadeSection() {
   if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   return (
-    <section className="bg-beige py-20 px-4">
+    <section className=" py-20 px-4">
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[100px] md:auto-rows-[250px]">
         {/* 1 - Tall image */}
         <div className="row-span-3 md:row-span-2">

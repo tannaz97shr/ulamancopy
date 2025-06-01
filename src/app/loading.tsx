@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-beige">
+    <main className="min-h-screen flex items-center justify-center">
       <div className="flex flex-col items-center space-y-4 text-brown">
         {/* Spinner */}
         <svg

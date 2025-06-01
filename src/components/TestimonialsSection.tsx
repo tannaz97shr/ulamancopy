@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
   if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   return (
-    <section className="bg-beige py-20 px-4 text-brown">
+    <section className="py-20 px-4 text-brown">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex-col w-fit">

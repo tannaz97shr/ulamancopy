@@ -25,7 +25,7 @@ export default function MapSection() {
   if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   return (
-    <section className="relative w-full bg-beige py-20 px-4">
+    <section className="relative w-full py-20 px-4">
       {/* Title + Tag */}
       <div className="max-w-screen-xl mx-auto text-left mb-10">
         <h2 className="text-gold text-2xl font-serif mb-4 leading-snug">

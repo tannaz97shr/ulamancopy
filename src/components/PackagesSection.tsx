@@ -52,13 +52,13 @@ export default function PackageSection() {
   }, [swiperInstance]);
 
   return (
-    <section className="bg-beige py-16 px-4">
+    <section className="py-16 px-4">
       <h2 className="text-center text-gold text-xl max-w-xl mx-auto leading-relaxed font-serif mb-12">
         Book one of our special packages for a getaway <br />
         you’ll never forget.
       </h2>
 
-      <div className="relative flex max-w-screen-xl mx-auto">
+      <div className="relative flex mx-auto">
         {/* Desktop arrows */}
         <div className="hidden lg:flex flex-col gap-4 justify-center w-[10%]">
           <div

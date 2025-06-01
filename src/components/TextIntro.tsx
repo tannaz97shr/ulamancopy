@@ -14,10 +14,10 @@ export default function TextIntro() {
   });
   const words = text.split(" ");
   return (
-    <section className="relative bg-beige text-center py-32 px-4">
+    <section className="relative text-center py-40 px-4">
       <p
         ref={element}
-        className="max-w-80 flex flex-wrap mx-auto justify-center"
+        className="max-w-96 flex flex-wrap mx-auto justify-center"
       >
         {words.map((word, i) => {
           const start = i / words.length;
@@ -46,7 +46,7 @@ const Word = ({
   const amount = range[1] - range[0];
   const step = amount / (children?.toString().length || 1);
   return (
-    <span className="relative mr-3 text-2xl text-gold">
+    <span className="relative mr-3 text-2xl lg:text-3xl text-gold">
       {characters?.map((char, i) => {
         const start = range[0] + step * i;
         const end = range[0] + step * (i + 1);
@@ -72,7 +72,9 @@ const Character = ({
   const opacity = useTransform(progress, range, [0, 1]);
   return (
     <>
-      <span className="text-2xl text-gold absolute opacity-20">{children}</span>
+      <span className="text-2xl lg:text-3xl text-gold absolute opacity-20">
+        {children}
+      </span>
       <motion.span style={{ opacity }}>{children}</motion.span>
     </>
   );

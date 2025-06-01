@@ -25,7 +25,7 @@ export default function PackagesMarquee() {
   if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   return (
-    <div className="overflow-hidden bg-beige text-green-dark text-sm py-4">
+    <div className="overflow-hidden text-green-dark text-sm py-4">
       <div className="whitespace-nowrap animate-marquee text-dark-emphasis">
         {items.map((item, i) => (
           <span key={i} className="inline-block mx-4">

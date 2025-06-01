@@ -38,7 +38,7 @@ export default function ScheduleSection() {
   };
 
   return (
-    <section className="bg-beige py-20 px-4">
+    <section className="py-20 px-4">
       <div className="text-center mb-10">
         <h2 className="text-gold text-3xl font-serif">Weekly Schedule</h2>
         <p className="text-brown mt-2">Advanced Booking Is Recommended</p>
