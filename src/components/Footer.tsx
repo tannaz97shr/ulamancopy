@@ -1,6 +1,7 @@
 import { StarIcon } from "@heroicons/react/24/solid"; // or your own icon
 import Image from "next/image";
 import FooterAdultSelector from "./FooterAdultSelector";
+import FooterAwardsMarquee from "./FooterAwardsMarquee";
 import FooterConnectSection from "./FooterConnectSection";
 import FooterExploreMenu from "./FooterExploreMenu";
 import FooterSubscribeForm from "./FooterSubscribeForm";
@@ -63,6 +64,7 @@ export default function Footer() {
         <FooterExploreMenu />
         <FooterConnectSection />
       </div>
+      <FooterAwardsMarquee />
     </div>
   );
 }
