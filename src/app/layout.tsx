@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import type { ReactNode } from "react";
 import "./globals.css";
 
+import Footer from "@/components/Footer";
 import { Montserrat, Playfair_Display } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="bg-beige">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
