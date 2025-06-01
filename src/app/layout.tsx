@@ -21,6 +21,9 @@ const playfair = Playfair_Display({
 export const metadata = {
   title: "Ulaman Clone",
   description: "A clone of Ulaman Bali using Next.js App Router",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
