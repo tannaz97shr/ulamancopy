@@ -3,7 +3,6 @@ export const menuItems = [
   "Villas",
   "Packages",
   "Spa",
-  "Retreats",
   "Dine",
   "Experiences",
   "Facilities",
