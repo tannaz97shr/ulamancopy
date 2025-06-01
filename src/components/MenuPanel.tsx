@@ -1,24 +1,9 @@
 "use client";
 
+import { menuItems } from "@/constants/menuitems";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const menuItems = [
-  "Home",
-  "Villas",
-  "Packages",
-  "Spa",
-  "Retreats",
-  "Dine",
-  "Experiences",
-  "Facilities",
-  "Blog",
-  "Reviews",
-  "About",
-  "Contact",
-  "The Map",
-];
 
 export default function MenuPanel({ onClose }: { onClose: () => void }) {
   const pathname = usePathname();

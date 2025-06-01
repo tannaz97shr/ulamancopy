@@ -1,6 +1,9 @@
 import { StarIcon } from "@heroicons/react/24/solid"; // or your own icon
 import Image from "next/image";
 import FooterAdultSelector from "./FooterAdultSelector";
+import FooterConnectSection from "./FooterConnectSection";
+import FooterExploreMenu from "./FooterExploreMenu";
+import FooterSubscribeForm from "./FooterSubscribeForm";
 
 export default function Footer() {
   return (
@@ -45,7 +48,7 @@ export default function Footer() {
           <Image src={"/images/footer-map.avif"} alt={"footer map"} fill />
         </div>
         <div className="flex flex-col w-full gap-6 md:justify-center">
-          <h2 className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl font-serif">
             Tucked Within Majestic Balinese Nature.
           </h2>
           <p>
@@ -54,6 +57,11 @@ export default function Footer() {
             you&apos;ll never want to leave Ulaman.
           </p>
         </div>
+      </div>
+      <div className="flex flex-col w-full md:flex-row md:gap-10 md:items-baseline">
+        <FooterSubscribeForm />
+        <FooterExploreMenu />
+        <FooterConnectSection />
       </div>
     </div>
   );

@@ -1,0 +1,15 @@
+export const menuItems = [
+  "Home",
+  "Villas",
+  "Packages",
+  "Spa",
+  "Retreats",
+  "Dine",
+  "Experiences",
+  "Facilities",
+  "Blog",
+  "Reviews",
+  "About",
+  "Contact",
+  "The Map",
+];
