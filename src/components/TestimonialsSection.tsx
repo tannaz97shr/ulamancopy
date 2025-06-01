@@ -7,6 +7,7 @@ import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ArrowLeft, ArrowRight } from "./Icons";
+import Spinner from "./Spinner";
 
 type Testimonial = {
   name: string;
@@ -19,12 +20,20 @@ type Testimonial = {
 
 export default function TestimonialsSection() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   useEffect(() => {
-    fetchTestimonials().then(setTestimonials).catch(console.error);
+    fetchTestimonials()
+      .then(setTestimonials)
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) return <Spinner />;
+  if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   return (
     <section className="bg-beige py-20 px-4 text-brown">

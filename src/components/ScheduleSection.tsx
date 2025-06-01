@@ -3,6 +3,7 @@
 import { fetchSchedule } from "@/lib/fetchSchedule";
 import { ISchedule } from "@/types/general";
 import { useEffect, useState } from "react";
+import Spinner from "./Spinner";
 
 const days = [
   "Monday",
@@ -16,10 +17,18 @@ const days = [
 
 export default function ScheduleSection() {
   const [schedule, setSchedule] = useState<ISchedule[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchSchedule().then(setSchedule).catch(console.error);
+    fetchSchedule()
+      .then(setSchedule)
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) return <Spinner />;
+  if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   const getBgClass = (activity: string) => {
     if (activity.includes("Yoga")) return "bg-[#d9ebc4]";

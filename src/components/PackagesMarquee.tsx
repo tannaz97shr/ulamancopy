@@ -2,6 +2,7 @@
 
 import { fetchPackagesMarquee } from "@/lib/fetchPackagesMarquee";
 import { useEffect, useState } from "react";
+import Spinner from "./Spinner";
 
 type PackageItem = {
   title: string;
@@ -10,10 +11,18 @@ type PackageItem = {
 
 export default function PackagesMarquee() {
   const [items, setItems] = useState<PackageItem[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchPackagesMarquee().then(setItems).catch(console.error);
+    fetchPackagesMarquee()
+      .then(setItems)
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) return <Spinner />;
+  if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   return (
     <div className="overflow-hidden bg-beige text-green-dark text-sm py-4">

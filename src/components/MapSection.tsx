@@ -6,14 +6,23 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { iconRegistry } from "./Icons";
 import MapDetailPanel from "./MapDetailPanel"; // ← you must have this
+import Spinner from "./Spinner";
 
 export default function MapSection() {
   const [points, setPoints] = useState<MapPoint[]>([]);
   const [selected, setSelected] = useState<MapPoint | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchMapPoints().then(setPoints).catch(console.error);
+    fetchMapPoints()
+      .then(setPoints)
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) return <Spinner />;
+  if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   return (
     <section className="relative w-full bg-beige py-20 px-4">

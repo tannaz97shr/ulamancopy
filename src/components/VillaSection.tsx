@@ -10,16 +10,22 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ArrowLeft, ArrowRight } from "./Icons";
+import Spinner from "./Spinner";
 import VillaCard from "./VillaCard";
 
 export default function VillaSection() {
   const [villas, setVillas] = useState<Villa[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
   const [swiperInstance, setSwiperInstance] = useState<any>(null);
 
   useEffect(() => {
-    fetchVillas().then(setVillas).catch(console.error);
+    fetchVillas()
+      .then(setVillas)
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
   }, []);
 
   useEffect(() => {
@@ -39,6 +45,9 @@ export default function VillaSection() {
       swiperInstance.navigation.update();
     }
   }, [swiperInstance]);
+
+  if (loading) return <Spinner />;
+  if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
 
   return (
     <section className="bg-beige py-16 px-4">

@@ -3,6 +3,7 @@
 import { fetchFadeImages } from "@/lib/fetchFadeImages";
 import { useEffect, useState } from "react";
 import ImageFadeItem from "./ImageFadeItem";
+import Spinner from "./Spinner";
 
 type FadeImage = {
   id: string;
@@ -12,11 +13,19 @@ type FadeImage = {
 
 export default function ImageFadeSection() {
   const [items, setItems] = useState<FadeImage[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetchFadeImages().then(setItems).catch(console.error);
+    fetchFadeImages()
+      .then(setItems)
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
   }, []);
-  if (items.length < 6) return null;
+
+  if (loading) return <Spinner />;
+  if (error) return <p className="text-red-500 text-center py-10">{error}</p>;
+
   return (
     <section className="bg-beige py-20 px-4">
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[100px] md:auto-rows-[250px]">
