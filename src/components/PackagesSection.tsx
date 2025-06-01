@@ -74,7 +74,7 @@ export default function PackageSection() {
         </div>
 
         {/* Swiper carousel */}
-        <div className="flex-1 max-w-[94%]">
+        <div className="flex-1 max-w-[90%]">
           <Swiper
             modules={[Navigation]}
             spaceBetween={24}

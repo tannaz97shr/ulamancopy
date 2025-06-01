@@ -19,7 +19,7 @@ export default function NatureSection() {
   return (
     <section
       ref={ref}
-      className="bg-beige py-24 px-4 flex flex-col items-center justify-center"
+      className="bg-beige py-24 flex flex-col items-center justify-center"
     >
       <h2 className="text-gold text-center font-serif text-xl mb-6">
         Experience a blend of nature, comfort and <br /> luxury like never
