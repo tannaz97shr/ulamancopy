@@ -98,13 +98,23 @@ export default function MobileHeader() {
         >
           <Link
             href="/book"
-            className={`px-5 py-2 border text-sm font-medium transition-all duration-300 rounded-tl-xl rounded-br-xl ${
+            className={`px-5 py-2 border text-sm font-medium transition-all duration-300 rounded-tl-xl rounded-br-xl hidden lg:flex ${
               isScrolled || menuOpen
                 ? "text-gold border-gold"
                 : "text-white border-white"
             }`}
           >
             Stay With Us
+          </Link>
+          <Link
+            href="/book"
+            className={`px-5 py-2 border text-sm font-medium transition-all duration-300 rounded-tl-xl rounded-br-xl flex lg:hidden ${
+              isScrolled || menuOpen
+                ? "text-gold border-gold"
+                : "text-white border-white"
+            }`}
+          >
+            Book
           </Link>
         </motion.div>
       </motion.header>
