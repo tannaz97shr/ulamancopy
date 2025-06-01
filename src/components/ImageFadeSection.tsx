@@ -19,9 +19,9 @@ export default function ImageFadeSection() {
   if (items.length < 6) return null;
   return (
     <section className="bg-beige py-20 px-4">
-      <div className="grid grid-cols-3 gap-4 auto-rows-[250px]">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[100px] md:auto-rows-[250px]">
         {/* 1 - Tall image */}
-        <div className="row-span-2">
+        <div className="row-span-3 md:row-span-2">
           <ImageFadeItem
             images={items[0].images}
             interval={items[0].interval}
@@ -29,14 +29,14 @@ export default function ImageFadeSection() {
         </div>
 
         {/* 2 - Two stacked images */}
-        <div>
+        <div className="row-span-2 md:row-span-1">
           <ImageFadeItem
             images={items[1].images}
             interval={items[1].interval}
           />
         </div>
         {/* 3 - Wide image */}
-        <div className=" row-span-2">
+        <div className=" row-span-3 md:row-span-2">
           <ImageFadeItem
             images={items[3].images}
             interval={items[3].interval}
@@ -44,7 +44,7 @@ export default function ImageFadeSection() {
         </div>
 
         {/* 4 - Normal image */}
-        <div className="row-span-2">
+        <div className=" row-span-3 md:row-span-2">
           <ImageFadeItem
             images={items[4].images}
             interval={items[4].interval}
@@ -52,13 +52,13 @@ export default function ImageFadeSection() {
         </div>
 
         {/* 5 - Normal image */}
-        <div>
+        <div className=" row-span-3 md:row-span-1">
           <ImageFadeItem
             images={items[5].images}
             interval={items[5].interval}
           />
         </div>
-        <div>
+        <div className="row-span-2 md:row-span-1">
           <ImageFadeItem
             images={items[2].images}
             interval={items[2].interval}
