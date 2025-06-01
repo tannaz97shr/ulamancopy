@@ -11,6 +11,7 @@ export default function Hero() {
 
     const onMessage = (event: MessageEvent) => {
       if (event.origin !== "https://www.youtube.com") return;
+      // Listen for events from YouTube API if needed
     };
 
     window.addEventListener("message", onMessage);
@@ -19,17 +20,27 @@ export default function Hero() {
 
   return (
     <section className="relative w-full h-screen overflow-hidden">
-      {/* YouTube Video Background */}
-      <div className="absolute inset-0 z-0">
-        <div className="relative w-full h-full">
-          <iframe
+      {/* YouTube Video Background Container */}
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+        <div className="absolute top-1/2 left-1/2 w-[177.78vh] h-[100vh] -translate-x-1/2 -translate-y-1/2">
+          {/* <iframe
             ref={iframeRef}
-            className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/pqkVOxt7Tk4?autoplay=1&mute=1&loop=1&playlist=pqkVOxt7Tk4&controls=0&modestbranding=1&showinfo=0&rel=0&enablejsapi=1"
-            title="Ulaman Hero Video"
-            allow="autoplay; fullscreen; encrypted-media"
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/pqkVOxt7Tk4?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=pqkVOxt7Tk4&modestbranding=1&enablejsapi=1"
+            title="Ulaman Resort Video"
+            allow="autoplay; fullscreen"
             allowFullScreen
-          />
+          /> */}
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/videos/relaxation.webm" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
 
