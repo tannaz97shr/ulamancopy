@@ -11,9 +11,9 @@ export const ArrowRight = (props: IconProps) => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...props}
     >
       <path d="M18 8L22 12L18 16"></path>
@@ -31,9 +31,9 @@ export const ArrowLeft = (props: IconProps) => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       {...props}
     >
       <path d="M18 8L22 12L18 16"></path>
@@ -83,7 +83,7 @@ export const IconSpa = (props: IconProps) => {
       viewBox="0 0 25.196 13.89"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect
             id="Rectangle_525"
             data-name="Rectangle 525"
@@ -93,7 +93,7 @@ export const IconSpa = (props: IconProps) => {
           />
         </clipPath>
       </defs>
-      <g id="Group_5986-2" data-name="Group 5986" clip-path="url(#clip-path)">
+      <g id="Group_5986-2" data-name="Group 5986" clipPath="url(#clipPath)">
         <path
           id="Path_3028"
           data-name="Path 3028"
@@ -146,7 +146,7 @@ export const IconYoga = (props: IconProps) => {
       viewBox="0 0 20.813 20.857"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect
             id="Rectangle_527"
             data-name="Rectangle 527"
@@ -156,7 +156,7 @@ export const IconYoga = (props: IconProps) => {
           />
         </clipPath>
       </defs>
-      <g id="Group_6115" data-name="Group 6115" clip-path="url(#clip-path)">
+      <g id="Group_6115" data-name="Group 6115" clipPath="url(#clipPath)">
         <path
           id="Path_3153"
           data-name="Path 3153"
@@ -372,7 +372,7 @@ export const IconLeaf = (props: IconProps) => {
       viewBox="0 0 25.196 13.89"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect
             id="Rectangle_525"
             data-name="Rectangle 525"
@@ -382,7 +382,7 @@ export const IconLeaf = (props: IconProps) => {
           />
         </clipPath>
       </defs>
-      <g id="Group_5986-2" data-name="Group 5986" clip-path="url(#clip-path)">
+      <g id="Group_5986-2" data-name="Group 5986" clipPath="url(#clipPath)">
         <path
           id="Path_3028"
           data-name="Path 3028"
@@ -435,7 +435,7 @@ export const IconMeditation = (props: IconProps) => {
       viewBox="0 0 20.813 20.857"
     >
       <defs>
-        <clipPath id="clip-path">
+        <clipPath id="clipPath">
           <rect
             id="Rectangle_527"
             data-name="Rectangle 527"
@@ -445,7 +445,7 @@ export const IconMeditation = (props: IconProps) => {
           />
         </clipPath>
       </defs>
-      <g id="Group_6115" data-name="Group 6115" clip-path="url(#clip-path)">
+      <g id="Group_6115" data-name="Group 6115" clipPath="url(#clipPath)">
         <path
           id="Path_3153"
           data-name="Path 3153"

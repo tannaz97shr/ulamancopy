@@ -47,7 +47,12 @@ export default function Footer() {
 
       <div className="flex flex-col w-full gap-8  md:flex-row-reverse md:mt-10">
         <div className="w-full aspect-square relative">
-          <Image src={"/images/footer-map.avif"} alt={"footer map"} fill />
+          <Image
+            src={"/images/footer-map.avif"}
+            alt={"footer map"}
+            fill
+            className="object-cover"
+          />
         </div>
         <div className="flex flex-col w-full gap-6 md:justify-center">
           <h2 className="font-semibold text-2xl font-serif">
