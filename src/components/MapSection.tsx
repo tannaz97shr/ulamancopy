@@ -1,20 +1,15 @@
 "use client";
 
 import { fetchMapPoints } from "@/lib/fetchMapPoints";
+import { MapPoint } from "@/types/general";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { iconRegistry } from "./Icons";
-
-type MapPoint = {
-  id: string;
-  label: string;
-  icon: string;
-  x: number;
-  y: number;
-};
+import MapDetailPanel from "./MapDetailPanel"; // ← you must have this
 
 export default function MapSection() {
   const [points, setPoints] = useState<MapPoint[]>([]);
+  const [selected, setSelected] = useState<MapPoint | null>(null);
 
   useEffect(() => {
     fetchMapPoints().then(setPoints).catch(console.error);
@@ -22,7 +17,7 @@ export default function MapSection() {
 
   return (
     <section className="relative w-full bg-beige py-20 px-4">
-      {/* Heading and Tag */}
+      {/* Title + Tag */}
       <div className="max-w-screen-xl mx-auto text-left mb-10">
         <h2 className="text-gold text-2xl font-serif mb-4 leading-snug">
           Discover Ulaman <br className="md:hidden" />
@@ -56,14 +51,12 @@ export default function MapSection() {
                 left: `${point.x}%`,
                 transform: "translate(-50%, -50%)",
               }}
+              onClick={() => setSelected(point)}
             >
               <div className="relative flex items-center">
-                {/* Icon */}
                 <div className="text-gold w-8 h-8 p-2 bg-beige rounded-full shadow-sm z-10">
                   <IconComponent className="w-full h-full" />
                 </div>
-
-                {/* Label on hover */}
                 <div className="opacity-0 group-hover:opacity-100 ml-0 transition-opacity duration-200 text-gold bg-beige px-3 py-1 rounded-full text-sm whitespace-nowrap shadow">
                   {point.label}
                 </div>
@@ -71,7 +64,24 @@ export default function MapSection() {
             </div>
           );
         })}
+
+        {/* Fixed Panel (desktop only, absolute inside map area) */}
+        {selected && (
+          <div className="hidden lg:flex absolute top-0 left-1/2 -translate-x-1/2 z-20 w-[60%] h-[65%] max-w-5xl shadow-xl rounded-lg bg-beige overflow-hidden">
+            <MapDetailPanel
+              point={selected}
+              onClose={() => setSelected(null)}
+            />
+          </div>
+        )}
       </div>
+
+      {/* Mobile Overlay (full screen) */}
+      {selected && (
+        <div className="lg:hidden fixed inset-0 bg-beige z-50">
+          <MapDetailPanel point={selected} onClose={() => setSelected(null)} />
+        </div>
+      )}
     </section>
   );
 }

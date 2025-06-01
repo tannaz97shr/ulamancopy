@@ -4,76 +4,149 @@
     "label": "Floating Villas",
     "icon": "IconBed",
     "x": 20.5,
-    "y": 30.5
+    "y": 30.5,
+    "category": "Accommodation",
+    "description": "Set above Bali's only bio-filtered, koi-filled lake, Ulaman's Floating Lake Villas offer a serene and luxurious experience unlike any other. Each villa features a private floating deck and a sunken round hammock, thoughtfully designed for couples—perfect for stargazing or feeding the koi below. Seamlessly blending modern tropical elegance with natural elements, the villas include a sun deck patio, hanging net, and a handcrafted teakwood bathtub.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZjNQMkMTzAJOCfIQ_best-resort-ulaman.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZjemEkMTzAJOCioq_ulaman.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zlbe8aWtHYXtT4Qk_lakevillabali.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "cocoon-villas",
     "label": "Cocoon Villas",
     "icon": "IconBed",
     "x": 27.8,
-    "y": 33.2
+    "y": 33.2,
+    "category": "Accommodation",
+    "description": "Elevated among the treetops, the Cocoon Jungle Villa is a bamboo-woven sanctuary featuring a black bamboo bathroom and a spacious private balcony—perfect for romantic breakfasts overlooking the jungle, garden, and pool. These elegantly designed, cocoon-like villas offer bamboo floors, the largest private balcony among all room types, and the most refined ensuite bathroom at Ulaman.",
+    "images": [
+      "https://images.prismic.io/ulaman/Zjepw0MTzAJOCirB_luxury-hotel.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZjeopEMTzAJOCiqz_resorts-bali.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZiPodvPdc1huKp2N_ulaman.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "spa",
     "label": "Spa Center",
     "icon": "IconSpa",
     "x": 30.1,
-    "y": 47.5
+    "y": 10.5,
+    "category": "Nature",
+    "description": "Experience Ulaman’s biofiltration lake, a swimmable, eco-friendly sanctuary home to hundreds of vibrant koi fish. Fed by spring and well water, this only man-made lake in Tabanan offers the unique opportunity to paddleboard among our Avatar like Villas and lush surrounding jungle.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZoAuAR5LeNNTwpgI_hotel-bali.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZjHdf0MTzAJOCdgw_ulaman.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "yoga-shala",
     "label": "Yoga Shala",
     "icon": "IconYoga",
     "x": 41.7,
-    "y": 40
+    "y": 40,
+    "category": "Facilities",
+    "description": "Immerse in tranquility at our Mandala Shala, a private haven with great acoustics and peaceful energy. Surrounded by natural elements, it’s perfect for small groups and private sessions, ideal for sound healing, yoga, and mindfulness practices, ensuring a serene and rejuvenating experience.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZobH6x5LeNNTwzNj_ulaman.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZobH6h5LeNNTwzNi_eco-luxury-resort-bali.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "restaurant",
     "label": "Restaurant",
     "icon": "IconDining",
     "x": 50.6,
-    "y": 55.4
+    "y": 55.4,
+    "category": "Restaurant",
+    "description": "A vibrant venue set within the jungle, with three Lotus restaurants and a floating lake romantic dinner deck overlooking the Avatar-like sky and lake-lit villas. Guests can hang out by the pool, savor specialty cocktails made with fresh ingredients, and enjoy delicious food. The menu, based on local and seasonal ingredients, includes Chef Arik’s inspirational 'chef selection' dishes with or without wine pairing.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZiSAvPPdc1huKqB-_restuarant-near-ubud.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zjr4iEMTzAJOCn6O_bar-bali.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zm_mFZm069VX1y53_eco-retreat-bali.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "pool",
     "label": "Main Pool",
     "icon": "IconPool",
     "x": 23.3,
-    "y": 39.5
+    "y": 39.5,
+    "category": "Facilities",
+    "description": "Located at E.A.R.T.H. Lounge, our ‘original main house’ pool offers the best architectural view in Ulaman with its fantastic bamboo roof architecture, including the famous circular stairs. This saltwater pool is the most private and quiet of our public pools and has both shallow and deep ends, ideal for floating breakfast, Aqua healing and beginner swimmers. Enjoy a healthy juice, cocktail, and fall asleep reading a book on our comfortable pool beds.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZlmLZaWtHYXtT9cS_eco-resort.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZpIFbh5LeNNTxIQq_ulaman.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zm_oR5m069VX1y8q_eco-retrea-bali-canggu.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "activities-deck",
     "label": "Activities Deck",
     "icon": "IconActivity",
     "x": 70.1,
-    "y": 35.2
+    "y": 35.2,
+    "category": "Facilities",
+    "description": "Stay active amidst natural beauty in our Gym, featuring panoramic views through clear glass panels. With state-of-the-art fitness equipment, enjoy limitless workout options that seamlessly blend exercise and nature, ensuring an invigorating and rejuvenating stay.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZpHn1B5LeNNTxIQV_ulaman-luxury-retreat.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZmEcAJm069VX1f0e_ulaman-eco-retreat.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZmEb_pm069VX1f0c_ecoresort-bali.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "garden",
     "label": "Organic Garden",
     "icon": "IconLeaf",
     "x": 38.0,
-    "y": 15
+    "y": 15,
+    "category": "Healing Center",
+    "description": "Hanging over the Ulaman waterfall and river, our Tree House Healing Center is built around the property’s most spiritual tree. This central sanctuary is used for healing sessions, sunrise meditations as well as Balinese astrology readings. Also, enjoy heavenly spa treatments here, accompanied by the hypnotic sounds of cascading water.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZpIOkB5LeNNTxIQ6_tree-house.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZpdRDh5LeNNTxOEe_tree-house-romantic-dinner-1.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZoarkR5LeNNTwy9Z_eco-retreat.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "meditation-hall",
     "label": "Meditation Hall",
     "icon": "IconMeditation",
     "x": 54.4,
-    "y": 35
+    "y": 35,
+    "category": "Healing Center",
+    "description": "Hanging over the Ulaman waterfall and river, our Tree House Healing Center is built around the property’s most spiritual tree. This central sanctuary is used for healing sessions, sunrise meditations as well as Balinese astrology readings. Also, enjoy heavenly spa treatments here, accompanied by the hypnotic sounds of cascading water.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZpIOkB5LeNNTxIQ6_tree-house.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZpdRDh5LeNNTxOEe_tree-house-romantic-dinner-1.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZoarkR5LeNNTwy9Z_eco-retreat.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "gift-shop",
     "label": "Gift Shop",
     "icon": "IconGift",
     "x": 72.5,
-    "y": 28.4
+    "y": 28.435,
+    "category": "Facilities",
+    "description": "Immerse in tranquility at our Mandala Shala, a private haven with great acoustics and peaceful energy. Surrounded by natural elements, it’s perfect for small groups and private sessions, ideal for sound healing, yoga, and mindfulness practices, ensuring a serene and rejuvenating experience.",
+    "images": [
+      "https://images.prismic.io/ulaman/ZobH6x5LeNNTwzNj_ulaman.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZobH6h5LeNNTwzNi_eco-luxury-resort-bali.jpg?auto=format,compress"
+    ]
   },
   {
     "id": "reception",
     "label": "Reception",
     "icon": "IconInfo",
     "x": 67.8,
-    "y": 80
+    "y": 80,
+    "category": "Open 24 / 7",
+    "description": "Welcome to the Ulaman reception, a stunning masterpiece built above the Ulaman River. Designed by Inspiral Architects, the owner, and Prima Design Studio, it features rammed earth, bamboo latticework, marble, and terrazzo with multi-coloured skylights. Enjoy seamless registration, a delicious welcome drink, and our friendly staff.",
+    "images": [
+      "https://images.prismic.io/ulaman/Zoag7R5LeNNTwy1E_ulaman.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZpCoch5LeNNTxFPd_ulaman.jpg?auto=format,compress"
+    ]
   }
 ]
