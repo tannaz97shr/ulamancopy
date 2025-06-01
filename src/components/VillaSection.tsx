@@ -58,7 +58,7 @@ export default function VillaSection() {
 
       <div className="relative flex max-w-screen-xl mx-auto">
         {/* Arrows - left vertical stack on desktop */}
-        <div className="hidden lg:flex flex-col gap-4 justify-center mr-20">
+        <div className="hidden lg:flex flex-col gap-4 justify-center w-[10%]">
           <div
             ref={prevRef}
             className="w-12 h-12 border border-gold text-gold hover:bg-gold hover:text-white rounded-md flex items-center justify-center cursor-pointer transition"
