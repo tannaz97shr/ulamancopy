@@ -1,6 +1,7 @@
 import DineSection from "@/components/DineSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import Hero from "@/components/Hero";
+import ImageFadeSection from "@/components/ImageFadeSection";
 import MapSection from "@/components/MapSection";
 import NatureSection from "@/components/NatureSection";
 import PackageSection from "@/components/PackagesSection";
@@ -24,6 +25,7 @@ export default async function HomePage() {
       <DineSection />
       <MapSection />
       <TestimonialsSection />
+      <ImageFadeSection />
     </>
   );
 }

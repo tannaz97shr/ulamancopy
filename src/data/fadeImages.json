@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "images": [
+      "https://images.prismic.io/ulaman/Z5mgK5bqstJ99-Jc_DSC09345.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZpTFzx5LeNNTxJWM_PREWEDDING-1.jpg?auto=format,compress"
+    ],
+    "interval": 18000
+  },
+  {
+    "id": "2",
+    "images": [
+      "https://images.prismic.io/ulaman/Zla9p6WtHYXtT4EA_ulaman.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/Zlal0aWtHYXtT4B2_ulaman.jpg?auto=format,compress"
+    ],
+    "interval": 5000
+  },
+  {
+    "id": "3",
+    "images": [
+      "https://images.prismic.io/ulaman/ZoDImh5LeNNTwp39_restaurant.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZiPqH_Pdc1huKp2X_Ulaman-facilities.jpg?auto=format,compress"
+    ],
+    "interval": 9000
+  },
+  {
+    "id": "4",
+    "images": [
+      "https://images.prismic.io/ulaman/ZnDlX5m069VX10tJ_eco-retreat-bali.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZoZc3h5LeNNTwyC-_luxury-resort-bali.jpg?auto=format,compress"
+    ],
+    "interval": 13000
+  },
+  {
+    "id": "5",
+    "images": [
+      "https://images.prismic.io/ulaman/ZlbYjKWtHYXtT4MP_bathflower.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZpTFjR5LeNNTxJWH_photoshoot.jpg?auto=format,compress"
+    ],
+    "interval": 15000
+  },
+  {
+    "id": "6",
+    "images": [
+      "https://images.prismic.io/ulaman/ZiR1pfPdc1huKqBq_eco-retreat-bali.jpg?auto=format,compress",
+      "https://images.prismic.io/ulaman/ZnWOMpbWFbowew-3_eco-reosrt.jpg?auto=format,compress"
+    ],
+    "interval": 4000
+  }
+]
