@@ -36,7 +36,7 @@ export default function ImageSlider({ images }: { images: string[] }) {
   }, [swiperInstance]);
 
   return (
-    <div className="relative group w-full h-[400px] overflow-hidden rounded-xl">
+    <div className="relative group w-full h-[400px] md:h-[600px] overflow-hidden rounded-xl">
       <Swiper
         modules={[Navigation, Pagination, EffectFade]}
         effect="fade"

@@ -1,6 +1,7 @@
 "use client";
 
 import { fetchFadeImages } from "@/lib/fetchFadeImages";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import ImageFadeItem from "./ImageFadeItem";
 import Spinner from "./Spinner";
@@ -28,7 +29,7 @@ export default function ImageFadeSection() {
 
   return (
     <section className=" py-20 px-4">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[100px] md:auto-rows-[250px]">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-[100px] md:auto-rows-[250px]">
         {/* 1 - Tall image */}
         <div className="row-span-3 md:row-span-2">
           <ImageFadeItem
@@ -73,6 +74,16 @@ export default function ImageFadeSection() {
             interval={items[2].interval}
           />
         </div>
+      </div>
+      <div className="flex w-full">
+        <Link href="#" className="mx-auto mt-4">
+          <Link
+            href="#"
+            className="inline-block text-sm text-gold font-medium border-b border-gold transition-all duration-300 hover:border-transparent pb-[2px]"
+          >
+            Discover All Experiences
+          </Link>
+        </Link>
       </div>
     </section>
   );

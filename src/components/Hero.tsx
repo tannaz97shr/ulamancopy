@@ -44,9 +44,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Fade to next section */}
-      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-beige z-10" />
-
       {/* Scroll cue */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20">
         <div className="animate-bounce text-white text-xl">↓</div>

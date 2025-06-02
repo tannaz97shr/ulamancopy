@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
 
       {/* Booking Form */}
-      <div className="w-full flex flex-col gap-10 md:flex-row">
+      <div className="w-full flex flex-col gap-10 md:flex-row max-w-3xl">
         <div className="flex flex-wrap justify-around items-between w-full items-center gap-4 text-white lg:border-r lg:border-white">
           <span className="mb-1">Check In</span>
 
@@ -39,7 +39,7 @@ export default function Footer() {
           <FooterAdultSelector />
 
           {/* Search Button */}
-          <button className="border border-white px-8 py-2 rounded-tl-lg rounded-br-lg text-white hover:bg-white hover:text-dark-emphasis transition">
+          <button className=" cursor-pointer border border-white px-8 py-2 rounded-tl-lg rounded-br-lg text-white hover:bg-white hover:text-dark-emphasis transition">
             Search
           </button>
         </div>

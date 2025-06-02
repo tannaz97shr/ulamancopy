@@ -12,6 +12,8 @@ export default function NatureSection() {
     offset: ["start end", "center start"],
   });
 
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+
   const radius = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   const clipPath = useTransform(radius, (r) => `circle(${r}% at center)`);
@@ -34,6 +36,7 @@ export default function NatureSection() {
           style={{
             WebkitClipPath: clipPath,
             clipPath: clipPath,
+            y: y,
           }}
           className="absolute inset-0"
         >

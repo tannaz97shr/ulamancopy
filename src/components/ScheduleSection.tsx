@@ -38,14 +38,14 @@ export default function ScheduleSection() {
   };
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 md:mx-16">
       <div className="text-center mb-10">
         <h2 className="text-gold text-3xl font-serif">Weekly Schedule</h2>
         <p className="text-brown mt-2">Advanced Booking Is Recommended</p>
       </div>
 
       <div className="overflow-x-auto w-full">
-        <table className="min-w-[800px] table-fixed border-separate border-spacing-0 mx-auto">
+        <table className="min-w-[800px] w-full table-fixed border-separate border-spacing-0 mx-auto">
           <thead>
             <tr>
               <th className="w-20"></th>

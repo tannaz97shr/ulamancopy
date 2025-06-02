@@ -60,10 +60,10 @@ export default function VillaSection() {
 
       <div className="relative flex mx-auto">
         {/* Arrows - left vertical stack on desktop */}
-        <div className="hidden lg:flex flex-col gap-4 justify-center w-[10%]">
+        <div className="hidden lg:flex flex-col gap-4 justify-center w-[15%] ml-12">
           <div
             ref={prevRef}
-            className={`w-12 h-12 border text-gold rounded-md flex items-center justify-center transition ${
+            className={`w-18 h-18 border text-gold rounded-md flex items-center justify-center transition ${
               isBeginning
                 ? "border-gray-300 text-gray-300 cursor-not-allowed"
                 : "border-gold hover:bg-gold hover:text-white cursor-pointer"
@@ -74,7 +74,7 @@ export default function VillaSection() {
 
           <div
             ref={nextRef}
-            className={`w-12 h-12 border text-gold rounded-md flex items-center justify-center transition ${
+            className={`w-18 h-18 border text-gold rounded-md flex items-center justify-center transition ${
               isEnd
                 ? "border-gray-300 text-gray-300 cursor-not-allowed"
                 : "border-gold hover:bg-gold hover:text-white cursor-pointer"
@@ -85,7 +85,7 @@ export default function VillaSection() {
         </div>
 
         {/* Swiper carousel */}
-        <div className="flex-1 max-w-[90%]">
+        <div className="flex-1 max-w-[85%]">
           <Swiper
             modules={[Navigation]}
             spaceBetween={16}

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ExperienceSection() {
   return (
     <section className="text-gold px-4 py-16">
-      <div className="max-w-4xl mx-auto space-y-10 lg:flex gap-16">
+      <div className="md:mx-[8rem] space-y-10 lg:flex gap-16">
         <ExperienceSlider />
 
         <div className="space-y-6 px-2 lg:w-1/2">

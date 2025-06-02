@@ -17,7 +17,7 @@ export default function TextIntro() {
     <section className="relative text-center py-40 px-4">
       <p
         ref={element}
-        className="max-w-96 flex flex-wrap mx-auto justify-center"
+        className="max-w-[600px] flex flex-wrap mx-auto justify-center"
       >
         {words.map((word, i) => {
           const start = i / words.length;

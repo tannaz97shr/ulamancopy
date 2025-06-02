@@ -60,10 +60,10 @@ export default function PackageSection() {
 
       <div className="relative flex mx-auto">
         {/* Desktop arrows */}
-        <div className="hidden lg:flex flex-col gap-4 justify-center w-[10%]">
+        <div className="hidden lg:flex flex-col gap-4 justify-center w-[15%]">
           <div
             ref={prevRef}
-            className={`w-12 h-12 rounded-md flex items-center justify-center transition ${
+            className={`w-18 h-18 rounded-md flex items-center justify-center transition ${
               isBeginning
                 ? "border border-gray-300 text-gray-300 cursor-not-allowed"
                 : "border border-gold text-gold hover:bg-gold hover:text-white cursor-pointer"
@@ -74,7 +74,7 @@ export default function PackageSection() {
 
           <div
             ref={nextRef}
-            className={`w-12 h-12 rounded-md flex items-center justify-center transition ${
+            className={`w-18 h-18 rounded-md flex items-center justify-center transition ${
               isEnd
                 ? "border border-gray-300 text-gray-300 cursor-not-allowed"
                 : "border border-gold text-gold hover:bg-gold hover:text-white cursor-pointer"
@@ -85,7 +85,7 @@ export default function PackageSection() {
         </div>
 
         {/* Swiper carousel */}
-        <div className="flex-1 max-w-[90%]">
+        <div className="flex-1 max-w-[85%]">
           <Swiper
             modules={[Navigation]}
             spaceBetween={24}
